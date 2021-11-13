@@ -1,0 +1,296 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+--primary-color:white;
+--secondary-color:black;
+}
+
+
+body{
+   background-color: var(--primary-color);
+   display: flex;   
+   transition: 0.2s linear;
+}
+
+.dark-theme{
+    
+        --primary-color:black;
+        --secondary-color:white;
+        
+}
+.nav-bar{
+width:100%;
+height:40px;
+display: flex;
+top:20px;
+position: absolute;
+font-size: 17px;;
+
+}
+
+
+.nav-bar nav ul {
+    display: flex;
+    padding:10px 20px;
+    list-style: none;
+    left:936px;
+    position:absolute;
+    
+}
+
+.nav-bar ul li{
+    margin:0px 30px;
+    cursor: pointer;  
+    color:var(--secondary-color);
+}
+
+.nav-bar ul li:hover{
+    color:orangered;
+      
+}
+
+
+
+.label{
+    height: 23px;
+    width: 50px;
+    background-color: orangered;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+    left: 1400px;
+    top: 11px;
+}
+
+.ball{
+    height:20px;
+    width:22px;
+    background-color: white;
+    position:absolute;
+    top:2px;
+    left:2px;
+    border-radius: 50%;
+    transition:0.2s linear;
+}
+
+.checkbox{
+    visibility: hidden;
+}
+
+.checkbox:checked + .label .ball{
+
+    transform:translateX(24px);
+}
+
+
+.side-img img{
+    display: flex;
+    position: absolute;
+    top: 130px;
+    height: 573px;
+    width: 623px;
+    left: 76px;
+    top: 64px;
+}
+
+.logo img{
+    height:50px;
+    width:50px;
+    position: absolute;
+    top:20px;
+    left:30px;
+}
+
+.logo h3{
+    font-style: italic;
+    color: purple;
+    position: absolute;
+    left: 97px;
+    top: 34px;
+}
+
+.form-section{
+    background-color: orangered;
+    height: 490px;
+    width: 500px;
+    left: 914px;
+    top: 128px;
+    position: relative;
+    border-radius: 5px;
+
+    
+    
+}
+
+.heading{
+    color:white;
+    font-size:30px;
+    font-weight:200;
+    font-style: italic;
+    text-align: center;
+    top:58px;
+    position: relative;
+}
+
+.form-section input{
+display: flex;
+position: relative;
+top:100px;
+width:250px;
+height:30px;
+border-radius: 5px;
+margin:10px auto;
+padding:3px 10px;
+}
+
+#btn{
+    display: flex;
+    position: relative;
+    top: 130px;
+    width: 92px;
+    height: 36px;
+    border-radius: 18px;
+    margin: 10px auto;
+    padding: 8px 24px;
+    cursor: pointer;
+}
+
+
+/*chrome*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+
+/******************** for responsive *******************/
+
+
+@media  screen and (min-width:320px) and (max-width:370px){
+
+    .nav-bar nav ul {
+     left:4px;
+     top:96px;
+    }   
+
+    .form-section{
+        left: 175px;
+    width: 257px;
+    top: 304px;
+    }
+
+    .side-img img{
+        height: 413px;
+            width: 257px;
+            top: 317px;
+            left: -18px;
+        }
+
+        .label{
+            left: 394px;
+                top: 18px;
+            }
+        
+    
+}
+
+
+
+@media screen and (min-width:375px) and (max-width:420px){
+    .nav-bar nav ul {
+        left:4px;
+        top:96px;
+       }   
+   
+       .form-section{
+           left: 175px;
+       width: 257px;
+       top: 220px;
+       }
+   
+       .side-img img{
+        height: 413px;
+            width: 257px;
+            top: 229px;
+            left: -18px;
+           }
+   
+           .label{
+               left: 394px;
+                   top: 18px;
+               }
+}
+
+
+
+@media screen and (min-width:425px) and (max-width:760px){
+    .nav-bar nav ul {
+        left:4px;
+        top:82px;
+       }   
+   
+       .form-section{
+        left: 175px;
+            width: 257px;
+            top: 175px;
+            height: 466px;
+        }
+       
+   
+       .side-img img{
+        height: 413px;
+            width: 257px;
+            top: 190px;
+            left: -18px;
+           }
+   
+           .label{
+               left: 394px;
+                   top: 18px;
+               }
+            }
+
+            
+@media screen and (min-width:768px) and (max-width:1020px){
+    .nav-bar nav ul {
+        left: 213px;
+            top: 6px;
+       }   
+   
+       .form-section{
+        left: 417px;
+            width: 287px;
+            top: 98px;
+            height: 466px;
+        }
+       
+   
+       .side-img img{
+        height: 413px;
+            width: 399px;
+            top: 89px;
+            left: 0px;
+           }
+   
+           .label{
+            left: 684px;
+                top: 18px;
+               }
+            }
